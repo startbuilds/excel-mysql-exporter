@@ -1,0 +1,43 @@
+{
+    "name": "your-company/excel-mysql-exporter",
+    "description": "Professional Excel to MySQL data export tool with duplicate detection and batch processing",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Development Team",
+            "email": "dev@yourcompany.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "phpoffice/phpspreadsheet": "^1.25"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExcelMySQLExporter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ExcelMySQLExporter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "export-full": "php export.php -f data.xlsx -t full",
+        "export-incremental": "php export.php -f data.xlsx -t incremental"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
