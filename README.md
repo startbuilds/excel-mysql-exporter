@@ -183,12 +183,7 @@ Set up automated exports using cron:
 - Error message sanitization
 - Configurable access controls
 
-## Testing
 
-Run the test suite:
-```bash
-composer test
-```
 
 ## Contributing
 
@@ -202,12 +197,6 @@ composer test
 
 MIT License - see LICENSE file for details
 
-## Support
-
-For technical support and questions:
-- Email: dev@yourcompany.com
-- Issues: GitHub Issues
-- Documentation: Full API documentation available
 
 ## Changelog
 
